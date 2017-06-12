@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'brandon-bold';
+    src: url('fonts/Brandon_bld.otf');
+}
+
+@font-face {
+    font-family: 'brandon-light';
+    src: url('fonts/Brandon_light.otf');
+}
+
+@font-face {
+    font-family: 'helvetica-neue';
+    src: url('fonts/HelveticaNeueLTPro-Md.otf');
+}
+
+@font-face {
+    font-family: 'sourcesanspro_re';
+    src: url('fonts/ProximaNovaReg.otf');
+}
+
+.scnavigation {
+    background-color: transparent;
+    border-color: transparent;
+    padding top: 20px;
+    margin-bottom: 0;
+}
+
+.sctab {
+    font-family: 'brandon-bold';
+    color: black;
+}
+
+.banner{
+    height: 170px;
+    background-color: transparent;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'brandon-light';
+    font-size: 40px;
+}
+
+.aboutme{
+    font-family: 'brandon-bold';
+    margin-bottom: 30px;
+}
+
+.aboutmecontent{
+    font-family: 'sourcesanspro_re';
+    color: #707070;
+    font-size: 15px;
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+
+.sayhitoher {
+    font-family: 'sourcesanspro_re';
+    color: black;
+    font-size: 15px;
+}
+
+#bannerinside div{
+    position: absolute;
+    margin-left: auto;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-animation: round 20s linear infinite;
+    animation: round 20s linear infinite;
+    width: 80%;
+}
+
+@-webkit-keyframes round{
+    7% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* appear */
+    }
+    18% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* present */
+    }
+    25% {
+        opacity:0;
+        filter:alpha(opacity=0);
+        /* disappear */
+    }
+}
+
+@keyframes round{
+    5% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    20% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    25% {
+        opacity:0;
+        filter:alpha(opacity=0);
+    }
+}
+
+#bannerinside div:nth-child(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+#bannerinside div:nth-child(2) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+#bannerinside div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+#bannerinside div:nth-child(4) {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+#bannerinside:hover div{
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+#bannerinside{
+    height: 72px;
+}
+
+#bannerinside>li{
+    list-style-type: none;
+}
+
+.work{
+    font-family: 'brandon-bold';
+    margin-bottom: 30px;
+}
+
+.padder{
+    height: 60px;
+}
+
+.padder-100 {
+    height: 100px;
+}
+
+.smallpadder {
+    height: 10px;
+}
+
+.scportrait{
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+    border: 8px solid #FFF;
+}
+
+.html, body {
+    background-color: rgb(237,236,235);
+    width: 100%;
+}
+
+.whitebackground{
+    background-color: #ffffff;
+}
+
+.site-footer {
+    padding-top: 30px;
+    height: 100px;
+    font-family: 'sourcesanspro_re';
+}
+
+.co-md-contact {
+    width: 20%
+}
+
+.contact ul {
+    margin-left: 50px;
+}
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.contact img {
+    padding-right: 8px;
+}
+
+.col-1 {
+    width: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgb(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.8);
+  margin: auto;
+  padding: 0;
+  width: 60%;
+  max-width: 1200px;
+}
+
+.project > .column {
+}
+
+.project: after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 17%;
+}
+
+/* The Close Button */
+.close {
+  color: #FDF5E6;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #FDF5E6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: transparent;
+  width: 739.59px;
+  padding: 2px 16px;
+}
+
+img.demo {
+  opacity: 0.6;
+  width: 150px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.project-picture {
+    height: 150px;
+    cursor: pointer;
+}
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+.project-name {
+    font-family: 'brandon-bold';
+    font-size: 25px;
+    color: 	#F0F8FF;
+}
+
+.project-content {
+    font-family: 'sourcesanspro_re';
+    color: #707070;
+    font-size: 15px;
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+
+.project-time {
+    font-family: 'helvetica-neue';
+    color: #707070;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.padder-30 {
+    height: 30px;
+}
+
+.array img {
+    padding-left: 32px;
+}
+
+.padder-50 {
+    height: 50px;
+}
+
+.sccollapse {
+    padding-right: 25px;
+}
+
+.site-footer {
+    background-color: transparent;
+}
