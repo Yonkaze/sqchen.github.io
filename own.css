@@ -168,6 +168,7 @@
 }
 
 .site-footer {
+    background-color: rgb(237,236,235);
     padding-top: 30px;
     height: 100px;
     font-family: 'sourcesanspro_re';
@@ -359,8 +360,4 @@ img.hover-shadow {
 
 .sccollapse {
     padding-right: 25px;
-}
-
-.site-footer {
-    background-color: transparent;
 }
