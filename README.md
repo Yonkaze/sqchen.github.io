@@ -1,1 +1,1 @@
-# sqchen.github.io
+# sqichen.github.io
