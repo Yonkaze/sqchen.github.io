@@ -168,7 +168,6 @@
 }
 
 .site-footer {
-    background-color: rgb(237,236,235);
     padding-top: 30px;
     height: 100px;
     font-family: 'sourcesanspro_re';
@@ -222,6 +221,7 @@
 }
 
 .project > .column {
+    padding-top: 10px;
 }
 
 .project: after {

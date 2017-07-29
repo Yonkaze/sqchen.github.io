@@ -1,11 +1,11 @@
 <html>
 <head>
     <title>Shuqi Chen</title>
-    <link rel="icon" type="image/png" href="img/favicon-sc.png">
 
     <!-- Boostrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="own.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon-sc.png">
 
     <script async src="http://www.google-analytics.com/analytics.js"></script>
     <script>
@@ -145,19 +145,22 @@
                             <div class="project">
 
   <div class="column">
-    <img src="img/liquidaty.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow project-picture">
+    <img src="img/2048logo.png" onclick="openModal();currentSlide(1)" class="hover-shadow project-picture">
   </div>
   <div class="column">
-    <img src="img/Taskash1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow project-picture">
+    <img src="img/liquidaty.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow project-picture">
   </div>
   <div class="column">
     <img src="img/wheeloffortune3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow project-picture">
   </div>
   <div class="column">
-    <img src="img/Dijkstra.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow project-picture">
+    <img src="img/Taskash1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow project-picture">
   </div>
   <div class="column">
-    <img src="img/tsp1.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow project-picture">
+    <img src="img/Dijkstra.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow project-picture">
+  </div>
+  <div class="column">
+    <img src="img/tsp1.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow project-picture">
   </div>
 
 </div>
@@ -171,16 +174,21 @@
         <p id="caption"></p>
       </div>
       <div class="smallpadder"></div>
+
+   <div class="mySlides">
+        <img src="img/my2048img.png" style="width:100%">
+    </div>
+
     <div class="mySlides">
         <img src="img/liquidaty2.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <img src="img/Taskash2.jpg" style="width:100%">
+        <img src="img/wheeloffortune6.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <img src="img/wheeloffortune6.jpg" style="width:100%">
+        <img src="img/Taskash2.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
@@ -198,23 +206,6 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-<!--
-    <div class="column">
-      <img class="demo" src="img/liquidaty.jpg" onclick="currentSlide(1)" alt="Liquidaty">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img/Taskash1.jpg" onclick="currentSlide(2)" alt="Taskash">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img/wheeloffortune3.jpg" onclick="currentSlide(3)" alt="Wheel of Fortune">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="img/Dijkstra.jpg" onclick="currentSlide(4)" alt="Dijkstra Algorithm">
-    </div>
--->
 
 </div>
                             </div>
@@ -277,13 +268,14 @@
           slides[slideIndex-1].style.display = "block";
           //dots[slideIndex-1].className += " active";
 
+          var my2048 = "<p class='project-name'>2048</p><p class='project-time'>2017.7</p><p class='project-content'>This is an adaptation of the popular single-player online game 2048. In this self-initiated project, I use Swing library to draw the board, and Java KeyEvents for keylisteners (up, down, left, right) with a hashmap mapping them to corresponding functions. In addition, I use enum to store values and colors as constants. Besides, it is worth mentioning that I write a rotate function which can rotate the board by 90, 180, 270 degrees. With this rotate function, I only need to write one function for movement (left in my case), since other three movements are equivalent to rotating the board by some degree, doing left, and then rotating the board to its original status.</p><p class='project-content'>Welcome to see more details about this project <a href='https://github.com/sqichen/my2048'>here!</a></p>";
           var liquidaty = "<p class='project-name'>Crunch.Liquidaty</p><p class='project-time'>2017.2-4</p><p class='project-content'>I designed and made websites for liquidaty as a part-time job. Crunch.liquidaty is one of several projects I did during this spring internship. It provides people with auto ABS loan-level analytics. I also wrote a web scraping for it.</p><p class='project-content'>You can see it <a href='https://crunch.liquidaty.com/auto'>here!</a></p>";
           var taskash = "<p class='project-name'>Taskash</p><p class='project-content'>2016.10</p><p class='project-content'>Taskash is a platform that provides people with quick money or quick help. My friend and I generated the idea and implemented it in 2016 CU Business Hackathon. </p><p class='project-content'>Welcome to see our full demo with links to apps <a href='https://app.slidebean.com/p/OqgjAMPpPv/Taskash'>here!</a></p>";
           var wheeloffortune = "<p class='project-name'>Wheel of Fortune</p><p class='project-content'>2017.1</p><p class='project-content'> This is a self-initiated project checking my understanding of GUI as well as concepts I learned in school. I spent a couple of days self-studying GUI last winter. After that, I implemented this version of the popular game show 'Wheel of Fortune' including a GUI using the Swing components in Java. </p>";
           var dijkstra = "<p class='project-name'>Way To Go</p><p class='project-content'>2016.11</p><p class='project-content'>This is one of project assignments of Data Structure(COMS3134). In this project, I implemented Dijkstra's algorithm to find shortest paths between pairs of cities on a map. We were required to keep vertices on a list and scan through the entire list to find the minimum instead of using priority queue (at the expense of runtime). This is because java.util.PriorityQueue does not support the decreaseKey operation.</p>";
           var tsp = "<p class='project-name'>Traveling Salesman</p><p class='project-content'>2016.12</p><p class='project-content'>This is one of project assignments of Data Structure(COMS3134) solving taveling salesman problem(TSP). In this project, I implemented the method nearestNeighborTsp() which use the nearest neighbor algorithm to find an estimate of the shortest simple cycle that visits each vertex. In addition, I implemented the method bruteForceTsp() which computes the actual shortest simple cycle visiting each vertex. For large n (n>8), the running time of Brute Force is significantly greater than that of Nearest Neighbor, yet Nearest Neighbor does not always return the actual 'shortest' path.</p>";
 
-          var projects = [liquidaty, taskash, wheeloffortune, dijkstra, tsp];
+          var projects = [my2048, liquidaty, wheeloffortune, taskash, dijkstra, tsp];
 
 
           captionText.innerHTML = projects[slideIndex-1];
