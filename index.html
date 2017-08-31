@@ -145,25 +145,31 @@
                             <div class="project">
 
   <div class="column">
-    <img src="img/guessthenumber-logo.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow project-picture">
+    <img src="img/album.png" onclick="openModal();currentSlide(1)" class="hover-shadow project-picture">
   </div>
   <div class="column">
-    <img src="img/2048logo.png" onclick="openModal();currentSlide(2)" class="hover-shadow project-picture">
+    <img src="img/guessthenumber-logo.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow project-picture">
   </div>
   <div class="column">
-    <img src="img/liquidaty.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow project-picture">
+    <img src="img/2048logo.png" onclick="openModal();currentSlide(3)" class="hover-shadow project-picture">
   </div>
   <div class="column">
-    <img src="img/wheeloffortune3.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow project-picture">
+    <img src="img/storm_viewer.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow project-picture">
   </div>
   <div class="column">
-    <img src="img/Taskash1.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow project-picture">
+    <img src="img/liquidaty.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow project-picture">
   </div>
   <div class="column">
-    <img src="img/Dijkstra.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow project-picture">
+    <img src="img/wheeloffortune3.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow project-picture">
   </div>
   <div class="column">
-    <img src="img/tsp1.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow project-picture">
+    <img src="img/Taskash1.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow project-picture">
+  </div>
+  <div class="column">
+    <img src="img/Dijkstra.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow project-picture">
+  </div>
+  <div class="column">
+    <img src="img/tsp1.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow project-picture">
   </div>
 
 </div>
@@ -178,9 +184,13 @@
       </div>
       <div class="smallpadder"></div>
 
+    <div class="mySlides"></div>
+
     <div class="mySlides"><img src="img/guessthenumber.png" style="width:100%"></div>
 
     <div class="mySlides"><img src="img/my2048img.png" style="width:100%"></div>
+
+    <div class="mySlides"><img src="img/storm_viewer1.png" style="width:100%"></div>
 
     <div class="mySlides"><img src="img/liquidaty2.jpg" style="width:100%"></div>
 
@@ -261,15 +271,17 @@
           slides[slideIndex-1].style.display = "block";
           //dots[slideIndex-1].className += " active";
 
+          var webalbum = "<p class='project-name'>Web Album</p><p class='project-time'>2017.8</p><p class='project-content'>This is an online photo service which allows people view, edit, add and delete albums and photos. This project includes using a web server, a SQL database, and a server-side programming language. Through this project, I feel comfortable using HTML, a back-end language (Python), and MySQL in concert.</p><p class='project-content'>For more detail, click <a href='https://github.com/sqichen/Web-Album'>here!</a></p>";
           var guessthenumber = "<p class='project-name'>Guess the Number</p><p class='project-time'>2017.8</p><p class='project-content'>This is a simple and web-based implementation of the game Guess the Number using Flask. I wrote this game to check my understanding of basic contexts of Flask.</p><p class='project-content'>Major extensions used: Flask-Bootstrap, Flask_WTF</p><p class='project-content'>To learn more, you may click <a href='https://github.com/sqichen/GuesstheNumber'>here!</a></p>";
           var my2048 = "<p class='project-name'>2048</p><p class='project-time'>2017.7</p><p class='project-content'>This is an adaptation of the popular single-player online game 2048. In this self-initiated project, I use Swing library to draw the board, and Java KeyEvents for keylisteners (up, down, left, right) with a hashmap mapping them to corresponding functions. In addition, I use enum to store values and colors as constants. Besides, it is worth mentioning that I write a rotate function which can rotate the board by 90, 180, 270 degrees. With this rotate function, I only need to write one function for movement (left in my case), since other three movements are equivalent to rotating the board by some degree, doing left, and then rotating the board to its original status.</p><p class='project-content'>Welcome to see more details about this project <a href='https://github.com/sqichen/my2048'>here!</a></p>";
+          var stormviewer = "<p class='project-name'>Storm Viewer</p><p class='project-time'>2017.6</p><p class='project-content'>This is a simple image viewer app using Swift under the instruction of <a href='https://www.hackingwithswift.com/'>HACKING WITH SWIFT</a>.</p><p class='project-content'>Details are available <a href='https://github.com/sqichen/MySwift'>here!</a></p>"
           var liquidaty = "<p class='project-name'>Crunch.Liquidaty</p><p class='project-time'>2017.2-4</p><p class='project-content'>I designed and made websites for liquidaty as a part-time job. Crunch.liquidaty is one of several projects I did during this spring internship. It provides people with auto ABS loan-level analytics. I also wrote a web scraping for it.</p><p class='project-content'>You can see it <a href='https://crunch.liquidaty.com/auto'>here!</a></p>";
           var taskash = "<p class='project-name'>Taskash</p><p class='project-content'>2016.10</p><p class='project-content'>Taskash is a platform that provides people with quick money or quick help. My friend and I generated the idea and implemented it in 2016 CU Business Hackathon. </p><p class='project-content'>Welcome to see our full demo with links to apps <a href='https://app.slidebean.com/p/OqgjAMPpPv/Taskash'>here!</a></p>";
           var wheeloffortune = "<p class='project-name'>Wheel of Fortune</p><p class='project-content'>2017.1</p><p class='project-content'> This is a self-initiated project checking my understanding of GUI as well as concepts I learned in school. I spent a couple of days self-studying GUI last winter. After that, I implemented this version of the popular game show 'Wheel of Fortune' including a GUI using the Swing components in Java. </p>";
           var dijkstra = "<p class='project-name'>Way To Go</p><p class='project-content'>2016.11</p><p class='project-content'>This is one of project assignments of Data Structure(COMS3134). In this project, I implemented Dijkstra's algorithm to find shortest paths between pairs of cities on a map. We were required to keep vertices on a list and scan through the entire list to find the minimum instead of using priority queue (at the expense of runtime). This is because java.util.PriorityQueue does not support the decreaseKey operation.</p>";
           var tsp = "<p class='project-name'>Traveling Salesman</p><p class='project-content'>2016.12</p><p class='project-content'>This is one of project assignments of Data Structure(COMS3134) solving taveling salesman problem(TSP). In this project, I implemented the method nearestNeighborTsp() which use the nearest neighbor algorithm to find an estimate of the shortest simple cycle that visits each vertex. In addition, I implemented the method bruteForceTsp() which computes the actual shortest simple cycle visiting each vertex. For large n (n>8), the running time of Brute Force is significantly greater than that of Nearest Neighbor, yet Nearest Neighbor does not always return the actual 'shortest' path.</p>";
 
-          var projects = [guessthenumber, my2048, liquidaty, wheeloffortune, taskash, dijkstra, tsp];
+          var projects = [webalbum, guessthenumber, my2048, stormviewer, liquidaty, wheeloffortune, taskash, dijkstra, tsp];
 
 
           captionText.innerHTML = projects[slideIndex-1];
